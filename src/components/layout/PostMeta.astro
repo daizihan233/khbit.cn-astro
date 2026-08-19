@@ -24,6 +24,8 @@ export interface Props {
 	customPath?: string;
 	pinned?: boolean;
 	password?: boolean;
+	zhihuLink?: string;
+	zhihuTitle?: string;
 	words?: number;
 	minutes?: number;
 	showWords?: boolean;
@@ -53,6 +55,8 @@ const {
 	showWords = false,
 	showReadingTime = false,
 	password,
+	zhihuLink = "",
+	zhihuTitle = "",
 	variant = "default",
 } = Astro.props;
 
@@ -115,6 +119,27 @@ const visibleTags =
           </span>
         </div>
       )
+  }
+
+  {
+    zhihuLink && zhihuLink.trim() && (
+      <div class="flex items-center">
+        <div class="meta-icon">
+          <Icon is:inline name="material-symbols:link-rounded" class="text-xl" />
+        </div>
+        <span class="text-50 text-sm font-medium">{i18n(I18nKey.syncedOn)}</span>
+        <a
+          href={zhihuLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={zhihuTitle || i18n(I18nKey.zhihu)}
+          class="link-lg transition text-50 text-sm font-medium
+            hover:text-(--primary) dark:hover:text-(--primary) whitespace-nowrap"
+        >
+          {i18n(I18nKey.zhihu)}
+        </a>
+      </div>
+    )
   }
 
   {

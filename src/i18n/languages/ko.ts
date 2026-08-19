@@ -87,6 +87,8 @@ export const ko: Translation = {
 	[Key.untitled]: "제목 없음",
 	[Key.uncategorized]: "미분류",
 	[Key.noTags]: "태그 없음",
+	[Key.syncedOn]: "동시 게시",
+	[Key.zhihu]: "지후",
 
 	[Key.wordCount]: "단어",
 	[Key.wordsCount]: "단어",

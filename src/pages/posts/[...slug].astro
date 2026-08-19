@@ -188,6 +188,8 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                 category={entry.data.category || undefined}
                 tags={entry.data.tags}
                 id={entry.id}
+                zhihuLink={entry.data["zhihu-link"]}
+                zhihuTitle={entry.data["zhihu-title"]}
               />
             </div>
           </div>
@@ -276,6 +278,8 @@ const relatedPosts = await getRelatedPosts(entry, 5);
               tags={entry.data.tags}
               category={entry.data.category || undefined}
               id={entry.id}
+              zhihuLink={entry.data["zhihu-link"]}
+              zhihuTitle={entry.data["zhihu-title"]}
             />
             {
               !showPostCover && (

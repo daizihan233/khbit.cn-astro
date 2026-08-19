@@ -18,6 +18,8 @@ type PostData = {
 	sourceLink: string;
 	licenseName: string;
 	licenseUrl: string;
+	"zhihu-link": string;
+	"zhihu-title": string;
 	comment: boolean;
 	password: string;
 	passwordHint: string;
@@ -55,6 +57,8 @@ const postsCollection: ContentCollection<PostData> = defineCollection({
 		sourceLink: z.string().optional().default(""),
 		licenseName: z.string().optional().default(""),
 		licenseUrl: z.string().optional().default(""),
+		"zhihu-link": z.string().nullable().optional().transform((v) => v ?? "").default(""),
+		"zhihu-title": z.string().nullable().optional().transform((v) => v ?? "").default(""),
 		comment: z.boolean().optional().default(true),
 		password: z.string().optional().default(""),
 		passwordHint: z.string().optional().default(""),

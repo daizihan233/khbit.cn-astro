@@ -88,6 +88,8 @@ export const en: Translation = {
 	[Key.untitled]: "Untitled",
 	[Key.uncategorized]: "Uncategorized",
 	[Key.noTags]: "No Tags",
+	[Key.syncedOn]: "Also on",
+	[Key.zhihu]: "Zhihu",
 
 	[Key.wordCount]: "word",
 	[Key.wordsCount]: "words",

@@ -87,6 +87,8 @@ export const ja: Translation = {
 	[Key.untitled]: "無題",
 	[Key.uncategorized]: "未分類",
 	[Key.noTags]: "タグなし",
+	[Key.syncedOn]: "こちらにも掲載",
+	[Key.zhihu]: "知乎",
 
 	[Key.wordCount]: "語",
 	[Key.wordsCount]: "語",

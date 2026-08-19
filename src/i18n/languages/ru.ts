@@ -88,6 +88,8 @@ export const ru: Translation = {
 	[Key.untitled]: "Без названия",
 	[Key.uncategorized]: "Без категории",
 	[Key.noTags]: "Нет тегов",
+	[Key.syncedOn]: "Также на",
+	[Key.zhihu]: "Zhihu",
 
 	[Key.wordCount]: "слово",
 	[Key.wordsCount]: "слова",

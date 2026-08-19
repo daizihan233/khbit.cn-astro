@@ -56,6 +56,10 @@ enum I18nKey {
 	uncategorized = "uncategorized",
 	noTags = "noTags",
 
+	// 知乎同步
+	syncedOn = "syncedOn",
+	zhihu = "zhihu",
+
 	wordCount = "wordCount",
 	wordsCount = "wordsCount",
 	minuteCount = "minuteCount",

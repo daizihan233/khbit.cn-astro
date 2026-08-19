@@ -85,6 +85,8 @@ export const zh_CN: Translation = {
 	[Key.untitled]: "无标题",
 	[Key.uncategorized]: "未分类",
 	[Key.noTags]: "无标签",
+	[Key.syncedOn]: "同步在",
+	[Key.zhihu]: "知乎",
 
 	[Key.wordCount]: "字",
 	[Key.wordsCount]: "字",
