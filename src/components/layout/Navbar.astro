@@ -19,6 +19,7 @@ import { i18n } from "@/i18n/translation";
 import type { NavBarLink } from "@/types/config";
 import { getFallbackFormat, getImageFormats } from "@/utils/image-utils";
 import { isHomePage } from "@/utils/layout-utils";
+import { resolveNavbarLinks } from "@/utils/navbar-i18n";
 import { url } from "@/utils/url-utils";
 import DropdownMenu from "./DropdownMenu.astro";
 import NavMenuPanel from "./NavMenuPanel.astro";
@@ -48,7 +49,8 @@ const isNavbarMenuCentered = navbarMenuAlign === "center";
 // 检查是否为首页
 const isHomePageCheck = isHomePage(Astro.url.pathname);
 
-// 检查是否有任何显示设置可用
+// 检查是否有任何显示设置可用（总开关关闭时下方各项均为 false）
+const isDisplaySettingsEnabled = displaySettingsConfig.enable;
 const showThemeColor = displaySettingsConfig.themeColorSwitchable;
 const isWallpaperSwitchable = displaySettingsConfig.wallpaperModeSwitchable;
 const allowLayoutSwitch = displaySettingsConfig.layoutSwitchable;
@@ -75,9 +77,11 @@ function filterLinks(link: NavBarLink): NavBarLink | null {
 	return { ...link, children: filteredChildren };
 }
 
-let links: NavBarLink[] = navBarConfig.links
-	.map(filterLinks)
-	.filter((link): link is NavBarLink => link !== null);
+let links: NavBarLink[] = resolveNavbarLinks(
+	navBarConfig.links
+		.map(filterLinks)
+		.filter((link): link is NavBarLink => link !== null),
+);
 
 // 处理导航栏 Logo 图片，image / url 类型支持亮暗色分别设置
 const logoConfig = siteConfig.navbar.logo;
@@ -219,7 +223,7 @@ const logoVariants = await Promise.all(
             </div>
         )}
         <NavMenuPanel links={links}></NavMenuPanel>
-        <DisplaySettings client:load></DisplaySettings>
+        {isDisplaySettingsEnabled && <DisplaySettings client:load></DisplaySettings>}
     </div>
 </div>
 
@@ -427,11 +431,10 @@ if (document.readyState === 'loading') {
                 }
             }
 
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', loadPagefind);
-            } else {
-                loadPagefind();
-            }
+            window.__loadPagefind = function () {
+                if (!window.__pagefindLoading) window.__pagefindLoading = loadPagefind();
+                return window.__pagefindLoading;
+            };
         </script>
     )
 }
