@@ -1,6 +1,6 @@
 ---
 title: MyGO 编排器开发手记：让每步都能路由到最合适的模型
-description: 让轻模型干轻活，让重模型干重活，让智能体干他最该干的活，让每一步路由到最合适的模型
+description: 让轻模型干轻活，让重模型干重活，让智能体干他最该干的活，让每一步路由到最合适的模型。适用于 DeepSeek Harness（DSH）的智能体编排器。
 published: 2026-08-22
 category: 技术
 tags:
