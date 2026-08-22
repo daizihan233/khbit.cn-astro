@@ -34,7 +34,7 @@ DeepSeek 涨价太哈人了，现在一两天就能花以前半个月的钱。�
 | DeepSeek V4 Flash Vision Exp (Off-Peak) | $0.22 | $0.66 | $0.007 | -    | $15  |
 | DeepSeek V4 Flash Vision Exp (Peak)     | $0.44 | $1.32 | $0.014 | -    | $15  |
 
-使用额度从 60$ 直降到 15$
+使用额度从 60 USD 直降到 15 USD
 
 ~~虽然我买完就开始和朋友一起用 Pro 蹬回本了~~
 
