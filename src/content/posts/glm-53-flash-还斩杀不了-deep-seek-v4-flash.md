@@ -12,7 +12,7 @@ zhihu-topics:
   - 国产大模型DeepSeek
   - 人工智能
   - 智谱上线GLM-3.5-Flash
-zhihu-link: https://www.zhihu.com/question/2076068666639230491
+zhihu-link: https://www.zhihu.com/question/2076068666639230491/answer/2076380594242637883
 zhihu-created-at: 2026-08-27 18:34
 ---
 > [!TLDR]
