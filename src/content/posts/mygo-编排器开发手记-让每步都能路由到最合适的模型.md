@@ -21,6 +21,7 @@ zhihu-topics:
   - AI开源项目
 zhihu-link: https://zhuanlan.zhihu.com/p/2074523751576818726
 ---
+
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117134998964032&bvid=BV1Jm866tEU7&cid=41141274335&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 DeepSeek 涨价太哈人了，现在一两天就能花以前半个月的钱。在涨价的前两天我买了 OpenCode Go，然后就被背刺了：
