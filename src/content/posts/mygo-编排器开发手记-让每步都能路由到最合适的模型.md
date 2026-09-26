@@ -41,7 +41,7 @@ DeepSeek 涨价太哈人了，现在一两天就能花以前半个月的钱。�
 
 四天时间，花了这么多：
 
-![每月用量 83%，大约相当于 50$](https://image-hk-1.oss-accelerate.aliyuncs.com/20260822134732702.png)
+![每月用量 83%，大约相当于 50$](https://static.khbit.cn/2026/09/396c383f7d7923d391fe14604a2639ba.png)
 
 实话讲，这额度消耗还是很吓人，这下去谁敢用。
 
@@ -61,11 +61,11 @@ dsh plugin --profile web add dsh-my-go@latest --config.minimumReleaseAge=0
 
 安装后需要配置模型，模型配置建议移步 README
 
-![设置页截图](https://image-hk-1.oss-accelerate.aliyuncs.com/PixPin_2026-08-22_02-23-23.png)
+![设置页截图](https://static.khbit.cn/2026/09/70b521d48d31c25300e3441934756fdd.png)
 
 保存设置后在新会话中选择 “MyGO!!!!! 模式” 即可使用：
 
-![新会话截图](https://image-hk-1.oss-accelerate.aliyuncs.com/PixPin_2026-08-22_02-24-35.png)
+![新会话截图](https://static.khbit.cn/2026/09/81af6893ab3b0f0a3b66a4a4cfa1340a.png)
 
 ## 闲聊
 

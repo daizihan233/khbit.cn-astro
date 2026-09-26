@@ -52,7 +52,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "星程课表 AstraSchedule",
-		imgurl: "https://image-hk-1.oss-accelerate.aliyuncs.com/icon.png",
+		imgurl: "https://static.khbit.cn/2026/09/b179a9ca48077ef92e5aea63c3bfa080.png",
 		desc: "灵活部署 · 智能调休 · 集中管控 · 兼容 Windows 7",
 		siteurl: "https://getastra.cn",
 		tags: ["Docs"],

@@ -11,7 +11,7 @@ slug: linux-box
 
 因为 Debian 的 logo 与拜尔的补佳乐戊酸雌二醇十分相似，此前就有类似的梗，如图：
 
-![Debian 盒装安装媒介梗图](https://image-hk-1.oss-accelerate.aliyuncs.com/gorbwmediv-%E5%9B%BE%E7%89%87-patp.png)
+![Debian 盒装安装媒介梗图](https://static.khbit.cn/2026/09/fffc80b2bf66b07f2649ca251444af79.png)
 
 所以就有了相关的平面设计图。后来，网上有一个流言说 Trans[\*] 们更爱用 Arch Linux，故有了 Arch 版本的平面设计图。此后还衍生出了 Ubuntu 版本的平面设计图。
 
@@ -51,7 +51,7 @@ Release 页面：
 6. 随便一个硬纸壳（快递盒子展开亦可），或者任何能保护你桌子的东西
 7. 尺子（可选）
 
-![1748767819703](https://image-hk-1.oss-accelerate.aliyuncs.com/ryla0z4c2zs-1748767819703.jpg)
+![1748767819703](https://static.khbit.cn/2026/09/5f1d3176780fd9f3e3632b8f8af264b4.jpg)
 
 # 动手做
 
@@ -71,11 +71,11 @@ Release 页面：
 
 剪完应该像这个样子：
 
-![剪完后的 Debian 盒装安装媒介](https://image-hk-1.oss-accelerate.aliyuncs.com/io8m9kgoykf-1748769680553.jpg)
+![剪完后的 Debian 盒装安装媒介](https://static.khbit.cn/2026/09/2f87179251a001045966870224a50858.jpg)
 
 ## 3. 折叠，把它变成一个盒子
 
-![折叠部分示意图](https://image-hk-1.oss-accelerate.aliyuncs.com/dyjjopjs4ki-%E5%9B%BE%E7%89%87-vpfz.png)
+![折叠部分示意图](https://static.khbit.cn/2026/09/5f732b26587a349394a03af984650d59.png)
 
 如图，使用美工刀（可配合尺子）沿着图中绿线所示部分轻轻划 2~3 下，以便折叠，但注意不要划断，然后将划过的部分向内折叠。最后，在蓝色部分贴上双面胶。请注意，纸盒侧边两个由竖条组成的部分**不应**粘贴双面胶，其意思**不是**“在此处粘贴双面胶”，而是雌二醇药盒中原本就有的设计。
 
@@ -105,7 +105,7 @@ Release 页面：
 
 ## 成品
 
-![1748779676869](https://image-hk-1.oss-accelerate.aliyuncs.com/sfm5w3i1dx-1748779676869.jpg)
+![1748779676869](https://static.khbit.cn/2026/09/2343e086e50f4567076baf85b65f7091.jpg)
 
 ~~怎么混进来个真的~~
 
