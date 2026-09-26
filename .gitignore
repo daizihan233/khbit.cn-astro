@@ -47,3 +47,12 @@ package/
 .codex*
 .claude
 .mimocode
+
+# 本地工具缓存与状态（不入库）
+.pnpm-store/
+.playwright-mcp/
+.reasonix/
+
+# 0007092 已移除该锁文件，保持不跟踪
+pnpm-lock.yaml
+
