@@ -91,7 +91,7 @@ $$
 h=\frac{620r+220}{233}
 $$
 
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/f27fc2d1d555d70268a0814e2d965f5d.png)
+![](https://static.khbit.cn/2026/08/f27fc2d1d555d70268a0814e2d965f5d.png)
 
 放在平面直角坐标系里长这样，其中紫色的线代表缓存命中神奇地达到了 100% 的情况，本图包括下文图中的点的坐标均四舍五入后保留 4 位小数，以便读者自行换算为百分数。
 
@@ -99,7 +99,7 @@ $$
 
 取一个我真实开发场景的例子
 
-![DSH 一次任务的统计数据](https://cn-nb1.rains3.com/kuohublog-images/2026/08/75b9c59f09146e8753872b8fd6bc9d31.png)
+![DSH 一次任务的统计数据](https://static.khbit.cn/2026/08/75b9c59f09146e8753872b8fd6bc9d31.png)
 
 那么代入计算：
 
@@ -124,7 +124,7 @@ $$
 $$
 h=\frac{1520r+520}{523}
 $$
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/bfeecaf46226e569063490244b03a19c.png)
+![](https://static.khbit.cn/2026/08/bfeecaf46226e569063490244b03a19c.png)
 
 不难发现的是，函数图像（黄线绿点）明显左移了，这意味着在这两周 GLM 半价活动时，还是能与 DS 打一打的。在梁文峰时，仅当 $r<0.002$ 且 $h>99.43\%$ 是 DS 才会是更好的选择。所以**在峰时，GLM 比 DS 更便宜**，性能也更强。
 
@@ -137,7 +137,7 @@ $$
 $$
 h=\frac{85r+35}{44}
 $$
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/846cf34807ff182b38712af11ccb4c75.png)
+![](https://static.khbit.cn/2026/08/846cf34807ff182b38712af11ccb4c75.png)
 
 那其实你到这个时候再看就很恐怖了，恰恰相反，恢复原价后 DS 把 GLM 拉爆了。可能你会说 Flash 性能没有 GLM 好啊什么的，**你会让 Fable 5 帮你改变量名吗？** 我的意思是，什么难度的活就应该让什么模型干，如果你想一个模型从头干到尾这本来就不合理。详见 [[mygo-编排器开发手记-让每步都能路由到最合适的模型|我的另一篇文章]] 。
 
@@ -162,7 +162,7 @@ $$
 
 但坦率地说，GLM 性能确实比 DSPro 好。都知道 DSPro 是过拟合，目前仍然存在神区二相性，所以 AA 评测仅作参考：
 
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/0fc9c4cf60bb1eceaba5b63557a6a707.png)
+![](https://static.khbit.cn/2026/08/0fc9c4cf60bb1eceaba5b63557a6a707.png)
 
 所以其实也许，GLMFlash 更好的去处是平替 DSPro。
 
@@ -185,7 +185,7 @@ h_{DPH}=\frac{2420r+820}{813}
 $$
 线太多了我们去掉一些：
 
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/c38eb90865670a087ca8a4bd901ea668.png)
+![](https://static.khbit.cn/2026/08/c38eb90865670a087ca8a4bd901ea668.png)
 
 其中蓝线对应峰时 DSPro，黑线对应谷时。可以看到，在谷时的时候，如果 $r<0.0075$ 或者 $h>97.88\%$，**仍然是 DSPro 更具性价比**。而在峰时，注意到 $h>1$ 且 $r<0$，超出了定义域，所以**总是 GLM 更有性价比**。
 
@@ -195,9 +195,9 @@ $$
 
 由于 AA 没有提供具体的输入 Token 数据，所以需要通过价格反推：
 
-![模型每任务价格](https://cn-nb1.rains3.com/kuohublog-images/2026/08/5294ed92823881b8b3ec64120811ea01.png)
+![模型每任务价格](https://static.khbit.cn/2026/08/5294ed92823881b8b3ec64120811ea01.png)
 
-![模型成本](https://cn-nb1.rains3.com/kuohublog-images/2026/08/21a1b3b37fc03ea9fbbdfa74caa1338b.png)
+![模型成本](https://static.khbit.cn/2026/08/21a1b3b37fc03ea9fbbdfa74caa1338b.png)
 
 计算：
 $$
@@ -205,6 +205,6 @@ r_D = \frac{\frac{0.01}{0.44}}{\frac{0.0027}{0.44}+\frac{0.02}{1.32\times(1-0.97
 $$
 从 AA 的价格上不难看出，大概是 [[#原价 GLM vs 峰时 DS]]，再回头看坐标系：
 
-![](https://cn-nb1.rains3.com/kuohublog-images/2026/08/4ad2528a49d8a8b3ea1d749aa52c221e.png)
+![](https://static.khbit.cn/2026/08/4ad2528a49d8a8b3ea1d749aa52c221e.png)
 
 在 AA 的测试环境下，DS 不足以完全发挥自己缓存命中的长处，所以无论 AA 怎么测，GLM 看起来就是更便宜，这是从数学的理论上就已经注定的。但实际写代码的时候 $r$ 值可能更低，$h$ 可能更高，所以并不能以 AA 的测评结果武断地说 GLM 比 DS 性价比高。
