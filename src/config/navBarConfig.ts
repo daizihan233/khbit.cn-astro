@@ -89,7 +89,11 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			LinkPresets.About,
 		],
 	});
-
+	links.push({
+		name: "开往",
+		url: "https://www.travellings.cn/go.html",
+		icon: "material-symbols:train"
+	});
 	// 自定义导航栏链接
 	links.push({
 		name: "链接",
