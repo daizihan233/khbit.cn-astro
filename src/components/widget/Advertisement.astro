@@ -81,7 +81,7 @@ const useContentPadding = !adConfig.padding;
       aria-label="Close"
       data-ad-id={widgetId}
     >
-      <Icon is:inline name="fa7-solid:xmark" class="w-3.5 h-3.5" aria-hidden="true" />
+      <Icon name="fa7-solid:xmark" class="w-3.5 h-3.5" aria-hidden="true" />
     </button>
   )}
 
@@ -143,7 +143,7 @@ const useContentPadding = !adConfig.padding;
         >
           <span>{adConfig.link.text}</span>
           {adConfig.link.external && (
-            <Icon is:inline name="fa7-solid:arrow-up-right-from-square" class="w-3.5 h-3.5" aria-hidden="true" />
+            <Icon name="fa7-solid:arrow-up-right-from-square" class="w-3.5 h-3.5" aria-hidden="true" />
           )}
         </a>
       </div>
@@ -194,9 +194,13 @@ const useContentPadding = !adConfig.padding;
   }
 
   initAd();
-  document.addEventListener("swup:contentReplaced", function () {
-    setTimeout(initAd, 100);
-  });
+  // 防止 Swup 切页重跑脚本时重复注册监听器（此脚本的 data-swup-ignore-script 在 define:vars 构建时可能丢失）
+  if (!window.__advertisementInit) {
+    window.__advertisementInit = true;
+    document.addEventListener("swup:contentReplaced", function () {
+      setTimeout(initAd, 100);
+    });
+  }
 </script>
 
 <script is:inline define:vars={{ isAdSense: !!adConfig.googleAdsense, widgetId }}>
