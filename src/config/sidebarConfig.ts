@@ -60,7 +60,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否启用该组件
 			enable: true,
 			// 组件位置
-			position: "top",
+			position: "sticky",
 			// 是否在文章详情页显示
 			showOnPostPage: true,
 		},
@@ -133,7 +133,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件位置
 			position: "top",
 			// 是否在文章详情页显示
-			showOnPostPage: false,
+			showOnPostPage: true,
 			// 组件专属配置
 			specificConfig: {
 				siteInfo: {
