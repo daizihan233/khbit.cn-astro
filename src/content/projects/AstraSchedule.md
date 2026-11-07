@@ -1,0 +1,92 @@
+---
+title: AstraSchedule 星程课表
+slug: astraschedule
+published: 2025-10-01
+description: 灵活部署、集中管控、智能调休 All in One！适用于中国学校场景，兼容 Windows 7 的大屏电子课表。提供免费公益 SaaS
+image: https://static.ymbit.cn/AstraSchedule/logo.png
+status: published
+tags:
+  - 教育
+  - 工具
+  - 课程表
+link:
+  - label: GitHub
+    icon: fa7-brands:github
+    value: https://github.com/AstraSchedule/desktop
+  - label: 文档
+    icon: material-symbols:menu-book
+    value: https://getastra.cn
+---
+
+# 认识一下
+
+> _**星**辰落旧室 星程起新**程**_
+
+[👉 现在就去选择部署方式！](https://getastra.cn/guide/choose-deployment.md)
+
+[💡不想自己部署？注册公益 SaaS](https://getastra.cn/guide/saas.html)
+
+![演示](https://static.khbit.cn/2026/09/d7eccf60121e0781cef6556a9046d9b5.png)
+
+AstraSchedule 是一套学校班级电子课表系统，包含多个独立组件：
+
+- **Electron 客户端**：运行在教室电脑上，显示课表、倒计时、天气、通知
+- **Web 管理端**：浏览器中配置课表、调课规则、倒计时等
+- **Golang 服务端**：提供 API 和数据存储，支持 SQLite 和 MySQL
+- **系统后端**：管理多租户/数据库级操作
+
+组件互相独立，可以分开部署在不同位置。你不需要自己的服务器也能部署，也可以使用 SaaS 方式。
+
+## 从哪里开始
+
+1. **没有服务器、想先用起来** → 直接使用 [SaaS 免部署](/guide/saas.md)（免费、免运维）
+2. **有自己的服务器或云账号** → 先看[选择部署方案](/guide/choose-deployment.md)，再按对应方案部署
+3. **服务部署完成后** → [安装客户端](/guide/client.md)，在每台教室电脑上配置班级标识
+
+不确定选哪种？去看[四种方案对比](/guide/choose-deployment.md)即可。
+
+您现在就可以前往 [i.getastra.cn](https://i.getastra.cn) 登录演示环境或沙盒环境进行尝试！
+
+|      | 演示环境              | 沙盒环境                |
+| ---- | ----------------- | ------------------- |
+| 后端地址 | class.getastra.cn | sandbox.getastra.cn |
+| 用户名  | test              | sandbox             |
+| 密码   | test123           | sandbox123          |
+
+> [!WARNING]
+>
+> 如果需要试用，建议使用演示环境数据。沙盒环境 **任何人** 都有权更改，故服务端不能保证数据的安全。如果不得不使用沙盒环境进行测试，建议您在隔离环境（如虚拟机中）进行测试。
+
+## 主要功能
+
+- **兼容 Windows 7**：客户端最低运行在 32 位 Windows 7 上
+- **智能调休**：课表可自动推算调休安排，无需手动录入
+- **侧载规则**：设置日期即可临时替换课表，过期自动恢复
+- **多级数据隔离**：校 - 级 - 班三层数据隔离，支持多账号
+- **弹性部署**：后端支持 SQLite 和 MySQL，可部署在 Serverless 平台
+- **备份与复制**：支持跨数据库类型备份还原，班级间配置复制
+
+## llms.txt
+
+本文档支持 llms.txt，可以将以下地址提供给 AI 工具阅读文档：
+
+```
+https://getastra.cn/llms.txt
+```
+
+## 版本说明
+
+本文档针对当前主分支实现，历史版本请以对应分支代码和配置为准。
+
+版本号格式为 `YYYYMM.D.N`：
+
+- YYYY = 年份
+- MM = 月份（两位数）
+- D = 日期
+- N = GitHub Action 序号
+
+例如 `202510.2.40` 表示 2025 年 10 月 02 日第 40 次构建。
+
+每次 main 分支的提交都会创建一个新版本，发布于 GitHub Release。后端最新版本至少与前端、客户端的最新三个版本兼容。
+
+自动更新通过 GitHub Release 下载，但不直接连接 GitHub，而是通过镜像源。镜像源支持修改，你可以针对所在网络环境搭建自己的镜像源。
