@@ -20,7 +20,7 @@ const pages = resolvePageToggles({
 	// 动态页面开关
 	dynamic: true,
 	// 项目展示页开关
-	projects: true,
+	projects: false,
 	// 相册页面开关
 	gallery: false,
 	// 书签导航页面开关
@@ -128,7 +128,7 @@ export const siteConfig: SiteConfig = {
 		// "static"：不固定，随页面滚动消失
 		// "fixed"：固定在顶部常显
 		// "dynamic"：固定在顶部，下滑隐藏、轻微上滑显示
-		navbarMode: "dynamic",
+		navbarMode: "fixed",
 	},
 
 	// 站点开始日期，用于统计运行天数
@@ -245,7 +245,7 @@ export const siteConfig: SiteConfig = {
 		// 是否显示随机文章推荐
 		randomPosts: true,
 		// OpenGraph图片功能，注意开启后要渲染很长时间，不建议本地调试的时候开启
-		generateOgImages: true,
+		generateOgImages: false,
 		// 沉浸阅读配置：电脑端文章详情页右下角按钮，进入后只留文章卡片+左侧目录
 		immersiveReading: {
 			// 总开关：false 则不显示按钮
@@ -286,7 +286,7 @@ export const siteConfig: SiteConfig = {
 		// 	game: false, // 禁用游戏分类显示
 		// },
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
-		nsfw: "hide",
+		nsfw: "blur",
 	},
 
 	// ── VNDB配置 ──────────────────────────────────
@@ -306,7 +306,7 @@ export const siteConfig: SiteConfig = {
 		// 私密列表访问令牌，仅 static 模式下使用；不要把真实令牌提交到公开仓库！
 		apiToken: "",
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
-		nsfw: "hide",
+		nsfw: "blur",
 	},
 
 	// ── MyAnimeList配置 ──────────────────────────────────
@@ -322,7 +322,7 @@ export const siteConfig: SiteConfig = {
 		// 漫画条目详情页地址，末尾需要带 /
 		mangaBaseUrl: "https://myanimelist.net/manga/",
 		// NSFW 处理："off" 不过滤 | "blur" 仅模糊封面 | "hide" 隐藏条目
-		nsfw: "hide",
+		nsfw: "blur",
 	},
 
 	// ── 图像优化配置 ──────────────────────────────────
